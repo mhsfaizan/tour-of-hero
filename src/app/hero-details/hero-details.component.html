@@ -1,0 +1,6 @@
+<div *ngIf="selectedHero">
+  <h2>{{selectedHero.name}}.Details</h2>
+  <label>
+    Name<input placeholder="Name" [(ngModel)]="selectedHero.name" class="form-control">
+  </label>
+</div>
