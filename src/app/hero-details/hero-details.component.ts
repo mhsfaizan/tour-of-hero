@@ -10,8 +10,9 @@ export class HeroDetailsComponent implements OnInit {
 
   @Input("hero")selectedHero:Hero;
   constructor() { 
-    }
+  }
   ngOnInit() {
   }
+ 
 
 }
