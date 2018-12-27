@@ -1,3 +1,6 @@
-<p>
-  dashboard works!
-</p>
+<h2>Top Heroes</h2>
+<div class="top-hero-container">
+  <a routerLink="/hero/{{hero.id}}" *ngFor="let hero of heroes" class="top-hero">
+    <span>{{hero.name}}</span>
+  </a>
+</div>

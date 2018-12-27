@@ -1,6 +1,6 @@
 <div *ngIf="message.messages">
   <h2>Message</h2>
-  <button (click)="message.clear()">Clear</button>
-  <!-- <div *ngFor="let msg of message">{{msg}}</div> -->
-  <div>{{message.messages}}</div>
+  <button (click)="clear()">Clear</button>
+  <div *ngFor="let msg of messages">{{msg}}</div>
+  <!-- <div>{{message.messages}}</div> -->
 </div>

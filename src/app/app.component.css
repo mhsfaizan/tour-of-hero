@@ -1,0 +1,9 @@
+.navigation{
+    border:1px solid #3366ee;
+    background-color: aqua;
+    padding: 1rem;
+    color: #555;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 1rem;
+}

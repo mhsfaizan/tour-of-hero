@@ -12,7 +12,11 @@ export class HeroService {
   constructor(private _message:MessageService) {
    }
   getHeroes():Observable<Hero[]>{
-    this._message.add("HeroService: fetched heroes");
+    this._message.add(`HeroService: fetched heroes`);
     return of(HEROES);
+  }
+  getHero(id:number):Observable<Hero>{
+    this._message.add(`HeroService: fetched heroe id = ${id}`);
+    return of(HEROES.find(o=>o.id==id));
   }
 }

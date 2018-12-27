@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,11 @@ export class MessageService {
   add(message:string){
     this.messages.push(message);
   }
-  clear():void{
+  clear():Observable<any>{
     this.messages = [];
+    return of(this.messages);
+  }
+  getMessages():Observable<any[]>{
+    return of(this.messages);
   }
 }
